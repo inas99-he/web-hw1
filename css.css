@@ -1,0 +1,92 @@
+.marquee {
+ height:50px;
+ overflow: hidden;
+ position: relative;
+ background: yellow;
+ color:black;
+ border:1px solid black;
+ box-shadow: 0px 0px 3px black;
+}
+.marquee p {
+ position:absolute;
+ width:100%;
+ height:100%;
+ margin:0;
+ line-height:20px;
+ text-align: center;
+ /* Starting position */
+ transform:translateX(50%);
+ /* Apply animation to this element */
+ animation: scroll-left 5s linear infinite;
+ animation-direction: reverse;
+
+}
+@keyframes scroll-left {
+  0%{transform:translateX(100%);top:0px}
+ 100% { transform: translateX(-100%);top:0px;}
+}
+
+body{
+  background-color: grey;
+}
+.moods a:link{
+color:red;
+text-decoration: none;
+}
+
+b{
+  color:yellow;
+}
+.header1{
+  color:#1ECFCC;
+  font-size:30pt;
+}
+.header{
+  font-style:oblique;
+  font-size:50pt;
+  color: #1ECFCC;
+}
+.fontstyle {
+  color:  white;
+  font-size:20pt;
+  text-align: left;
+}
+.fontsmall{
+  font-size:10pt;
+  color:white;
+  font-style:italic;
+  font-family:cursive;
+
+}
+.moodss img{
+  width:200px;
+  height:150px;
+}
+ .moods a:hover{
+  color:white;
+  background-color:green;
+  text-decoration: underline;
+}
+.list li{
+  list-style-type:none;
+  margin:0;
+  padding: 0;
+  font-size:15pt;
+}
+.liststylecolor li{
+  color:yellow;
+}
+span {
+  font-size:50pt;
+  color:#1ECFCC;
+  font-family: algerian, courier;
+  font-weight:bold;
+ line-height: 80%;
+}
+.span2{
+  font-size:15pt;
+  color:red;
+    font-weight:bold;
+  font-family: algerian, courier;
+ line-height: 80%;
+}
